@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amazingami.findservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.ezeonsoft.myprojectapp.permission.MAPS_RECEIVE" />
+
+    <!-- For Read state of phone like boot,reboot,wackup Permission -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.ezeonsoft.pc.desirecab.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/easyfinder_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity_Frontpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu_Holder" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Signup_Activity" />
+        <activity android:name=".Activity_search" />
+        <activity android:name=".Activity_AddPost" />
+        <activity android:name=".Activity_Custom_Dilog_Add" />
+        <activity android:name=".Activity_Myadd" />
+        <activity android:name=".Activity_Updatepost" />
+        <activity android:name=".Activity_CityChoice" />
+        <activity android:name=".ActivityDev" />
+        <activity android:name=".ActivityHelpSupport" />
+        <activity android:name=".ActivityProfile"></activity>
+    </application>
+
+</manifest>
