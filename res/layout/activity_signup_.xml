@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup_"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/front"
+    tools:context="com.example.amazingami.findservice.Signup_Activity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter Username"
+            android:textColor="#ffffff"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:id="@+id/etusername_signup"/>
+
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Enter Your Email Id"
+    android:textColor="#ffffff"
+
+    />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email id"
+            android:id="@+id/etemail_signup"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter Your Mobile No."
+            android:textColor="#ffffff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mobile no."
+            android:inputType="number"
+            android:id="@+id/etmobile_signup"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter Your Password"
+            android:textColor="#ffffff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:id="@+id/etpassword_signup"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select user type"
+            android:textColor="#ffffff"
+            />
+        <Spinner
+            android:id="@+id/spnuser_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="user type"/>
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:padding="12dp"
+    android:background="@drawable/btncardshape"
+    android:text="Create Account"
+    android:id="@+id/btnsignup"/>
+
+        <TextView android:id="@+id/tvlink_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already a member? Login here"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffffff"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

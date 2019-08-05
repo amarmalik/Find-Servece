@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000">
+
+    <net.bohush.geometricprogressview.GeometricProgressView
+        android:id="@+id/progressBar1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        app:gp_figure_padding="8dp"
+        app:gp_color="#fd57b311"
+        app:gp_number_of_angles="10"
+        app:gp_type="triangle" />
+   <!-- <ImageView
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_ezeappicons"
+
+        />-->
+    <!--  <ProgressBar
+          android:id="@+id/progressBar1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:indeterminateDrawable="@drawable/customprogressj"
+            android:layout_centerInParent="true" />
+          -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fd57b311"
+        android:textStyle="bold"
+        android:text="Loading..."/>
+</RelativeLayout>

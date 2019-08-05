@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/ic_btngradient"
+        android:layout_marginTop="10dp"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ln1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgerror"
+                android:background="@drawable/ic_btngradient"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Please Confirm"
+                android:textSize="25dp"
+                android:layout_alignTop="@+id/imgerror"
+                android:layout_alignBottom="@+id/imgerror"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#c14848"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/ln1"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#808080"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Are You sure? If you proceed you will be logged out immediately?"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#c14848"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#808080"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:layout_marginTop="20dp"
+
+                android:layout_height="1dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="100dp"
+                android:text="Ok"
+                android:id="@+id/btnok"
+
+                android:layout_marginLeft="10dp"
+
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:background="#f47171"
+                android:layout_height="40dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:id="@+id/btncancel"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#f47171"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

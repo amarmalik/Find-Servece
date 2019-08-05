@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_my_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fffdfd"
+        tools:context="com.example.amazingami.findservice.ActivityProfile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fafa"
+        android:id="@+id/ll_postadd_bar"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:id="@+id/iv_post_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User profile"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/tvpostadd_bar"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="130dp"
+                android:background="@drawable/user"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Name : "
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="user name"
+                    android:textSize="16dp"
+                    android:id="@+id/etnames"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Mobile : "
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="user mobile"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:id="@+id/etmobiles"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Email : "
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="user email"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:id="@+id/etemails"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Password : "
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="user password"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:id="@+id/etpasswords"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:text="Update"
+                android:id="@+id/btnupdate"
+                android:background="@drawable/ic_btngradient"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>

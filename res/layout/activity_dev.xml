@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fafa"
+        android:id="@+id/ll_postadd_bar"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:id="@+id/iv_post_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developers"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/tvpostadd_bar"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_postadd_bar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="80dp"
+                android:background="@drawable/amarimg"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Amar Malik\n IT Final year \n Roll no.- 1505213902"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                />
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/amarimg"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Atib Khan\n IT Final year \n Roll no.- 1505213904"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/amarimg"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Shahgul Qureshi\n IT Final year \n Roll no.- 140521"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                card_view:cardBackgroundColor="#80ffffff"
+                card_view:cardElevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                android:drawingCacheQuality="high">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.example.amazingami.findservice.ShinnyButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="20dp"
+                        android:text=" Give us your feedback"
+                        android:id="@+id/tvmymailid"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

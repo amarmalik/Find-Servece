@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/front"
+    tools:context="com.example.amazingami.findservice.LoginActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:weightSum="1">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+            android:text="Email id"
+            android:textColor="#ffffff"
+            android:id="@+id/tvmobileno">
+        </TextView>
+
+    <EditText
+        android:id="@+id/input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user mail id" />
+
+
+    <!-- Password Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Password"
+        android:textColor="#ffffff"
+        android:id="@+id/tvpassword">
+    </TextView>
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:hint="password"></EditText>
+
+        <CheckBox
+            android:id="@+id/cbShowPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/etPassword"
+            android:layout_below="@+id/input_password"
+            android:text="show_password" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/btncardshape"
+            android:text="Login"
+            android:textSize="18dp"/>
+        <TextView android:id="@+id/tvlink_signupin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="No account yet? Create one"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:text="Forget Password?"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:textColor="#ffffff"
+            android:text="Skip"
+          />
+
+</LinearLayout>
+</ScrollView>
+    </LinearLayout>

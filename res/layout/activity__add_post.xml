@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#fafa"
+        android:id="@+id/ll_postadd_bar"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:id="@+id/iv_post_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Your Add"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:id="@+id/tvpostadd_bar"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="41dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:scaleType="fitXY"
+    android:background="@drawable/browseimg"
+    android:id="@+id/iv_browse_image"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="Browse Image"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btncardshape"
+        android:id="@+id/btnbrowse"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Select Category:"
+        android:textColor="#000000"
+        android:id="@+id/tvmobileno">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="Select City:"
+        android:textColor="#000000"
+        android:id="@+id/tvcity">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="city name"
+
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:text="Select Area:"
+            android:textColor="#000000"
+            android:id="@+id/tvarea">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="area name"
+
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Category Service Name:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_servicename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="service name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Enter Price:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="price" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Category Description:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_cat_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Owner Name:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Owner name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Owner Mobile no:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mobile no."
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Owner Email id:"
+        android:textColor="#000000">
+    </TextView>
+    <EditText
+        android:id="@+id/et_owneremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email id."/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:background="@drawable/btncardshape"
+        android:id="@+id/btn_postsubmit"/>
+    </LinearLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
